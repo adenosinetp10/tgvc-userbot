@@ -1,0 +1,15 @@
+---
+application:
+  name: "tgvc-userbot"
+  project: "music_bot"
+  organization: "QoveryCommunity"
+databases:
+- type: "POSTGRESQL"
+  name: "music_db"
+  version: "12"
+routers:
+- name: "main-tgvc-userbot"
+  routes:
+  - application_name: "tgvc-userbot"
+    paths:
+    - "/*"
